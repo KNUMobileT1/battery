@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.user.battery.Myservice"
+        <service android:name="com.example.user.battery.BatteryService"
             android:enabled="true"
             android:exported="true"
             ></service>

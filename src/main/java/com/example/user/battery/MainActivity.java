@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("test", "on");
                     Intent intent = new Intent(
                             getApplicationContext(),//현재제어권자
-                            Myservice.class); // 이동할 컴포넌트
+                            BatteryService.class); // 이동할 컴포넌트
                     startService(intent); // 서비스 시작
 
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "off", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(
                             getApplicationContext(),//현재제어권자
-                            Myservice.class); // 이동할 컴포넌트
+                            BatteryService.class); // 이동할 컴포넌트
                     stopService(intent); // 서비스 종료
                 }
             }
